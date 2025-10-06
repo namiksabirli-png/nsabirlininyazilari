@@ -27,7 +27,7 @@
         header {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             color: white;
-            padding: 30px 0;
+            padding: 40px 0;
             border-radius: 0 0 10px 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             margin-bottom: 40px;
@@ -36,12 +36,12 @@
         .header-content {
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 30px;
         }
       
         .profile-image {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid rgba(255,255,255,0.3);
@@ -142,6 +142,24 @@
             opacity: 0.9;
         }
       
+        .audio-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #1b5e20;
+            background-color: #e8f5e9;
+            padding: 6px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #c8e6c9;
+        }
+      
+        .audio-icon {
+            font-size: 1rem;
+        }
+      
         footer {
             text-align: center;
             margin-top: 60px;
@@ -154,12 +172,12 @@
             .header-content {
                 flex-direction: column;
                 text-align: center;
-                gap: 15px;
+                gap: 20px;
             }
           
             .profile-image {
-                width: 80px;
-                height: 80px;
+                width: 120px;
+                height: 120px;
             }
           
             h1 {
@@ -180,14 +198,12 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <!-- PROFİL FOTOĞRAFINIZ BURAYA GELECEK -->
-                <img src="https://namiksabirli-png.github.io/images/profile-photo.jpeg" 
+                <img src="https://namiksabirli-png.github.io/images/nmkprofilcapcut.jpeg" 
                      alt="Namık Sabırlı" 
                      class="profile-image">
                 <div class="header-text">
-                    <h1>Namık Sabırlı Yazıları</h1>
-                    <p class="subtitle">Düşünceler, deneyimler ve öğrenilenler üzerine</p>
-                    <!-- GitHub bağlantısı buradan kaldırıldı -->
+                    <h1>NAMIK SABIRLI</h1>
+                    <p class="subtitle">DÜŞÜNCELER, DENEYİMLER VE ÖĞRENİLENLER ÜZERİNE YAZILAR</p>
                 </div>
             </div>
         </div>
@@ -202,25 +218,32 @@
                          alt="“TUTULMAYAGÖR”: CAHİT SITKI TARANCI'NIN DİZESİNDE BİR KELİMENİN YAKICI GÜCÜ">
                 </div>
                 <div class="article-content">
-                    <h2 class="article-title">1. “TUTULMAYAGÖR”: CAHİT SITKI'NIN DİZESİNDE BİR KELİMENİN YAKICI GÜCÜ</h2>
+                    <h2 class="article-title">1. "TUTULMAYAGÖR": CAHİT SITKI'NIN DİZESİNDE BİR KELİMENİN YAKICI GÜCÜ</h2>
+                    <div class="audio-indicator">
+                        <span class="audio-icon">🔊</span> Bu yazı, ses dosyası içerir
+                    </div>
                     <p class="article-excerpt">"Bir kere sevdaya tutulmayagör / Ateşlere yandığının resmidir." Yüzeyde bakıldığında, bu dizeyi çevirmek zor değildir: "Sevdaya tutulduğun zaman, ateşlerde yanarsın."</p>
                     <a href="https://namiksabirli-png.github.io/tutulmayagormuzik/" class="read-more" target="_blank">Devamını Oku</a>
                 </div>
             </div>
           
-            <!-- Yazı 2 -->
+             <!-- Yazı 2 -->
             <div class="article-card">
                 <div class="article-image">
-                    <img src="https://namiksabirli-png.github.io/images/cocukluk.jpeg" 
-                         alt="YAŞAMI GÜZELLEŞTİREN HAZİNE: ÇOCUKLUK">
+                    <img src="https://namiksabirli-png.github.io/images/y_b_bakiler_kapak_resim.jpg" 
+                         alt="YAVUZ BÜLENT BAKİLER VEFAT ETTİ-TAZİYE-BİR HATIRA">
                 </div>
                 <div class="article-content">
-                    <h2 class="article-title">2. YAŞAMI GÜZELLEŞTİREN HAZİNE: ÇOCUKLUK"</h2>
-                    <p class="article-excerpt">Kalbin Varlığa Uyanışı: Yaşamın İlk Işığı: Çocukluk, bir başlangıçtır: Bir şeyin adını bile koymadığımız halde hissedebildiğimiz ilk ışık, ilk düş, ilk üzüntü, ilk sevinç... Henüz dili bilmiyorduk ama dil kelimelerle değil, hislerle kuruluyordu.</p>
-                    <a href="https://namiksabirli-png.github.io/cocukluk_yazisiyeni/cocukluk_iyilik" class="read-more" target="_blank">Devamını Oku</a>
+                    <h2 class="article-title">2. YAVUZ BÜLENT BAKİLER VEFAT ETTİ-TAZİYE-BİR HATIRA</h2>
+                    <div class="audio-indicator">
+                        <span class="audio-icon">🔊</span> Bu yazı, ses dosyası içerir
+                    </div>
+                    <p class="article-excerpt">Allah Rahmet Eylesin. Yüksek Lisans tezim için Arif Nihat Asya'nın eşine yazdığı mektupları bir araya getiren "Sevgi Mektupları" kitabını bulmam gerekiyordu. Kitap son baskısından sonra uzun süre basılmadığı için piyasada yoktu. Kitabı basan ve yayına hazırlayan da Üstat Yavuz Bülent Bakiler idi. 25.03.2009'da Üstat'a ulaşıp durumu ifade ettiğimde kendi elinde olduğunu bana verebileceğini söyledi ve İçerenköy'deki evine eşimle birlikte gittik.</p>
+                    <a href="https://namiksabirli-png.github.io/yavuzbulentbakilertaziye/index.html" class="read-more" target="_blank">Devamını Oku</a>
                 </div>
             </div>
-          
+            
+            
             <!-- Yazı 3 -->
             <div class="article-card">
                 <div class="article-image">
@@ -234,7 +257,6 @@
                 </div>
             </div>
           
-            <!-- Diğer yazılar aynı formatta devam eder -->
             <!-- Yazı 4 -->
             <div class="article-card">
                 <div class="article-image">
@@ -264,7 +286,7 @@
             <!-- Yazı 6 -->
             <div class="article-card">
                 <div class="article-image">
-                    <img src="https://namiksabirli-png.github.io/images//yazarin_golgesi.jpeg" 
+                    <img src="https://namiksabirli-png.github.io/images/yazarin_golgesi.jpeg" 
                          alt="POSTMODERN BİR HİKAYE:Yazarın Gölgesinde Yaşamak">
                 </div>
                 <div class="article-content">
@@ -274,16 +296,16 @@
                 </div>
             </div>
           
-            <!-- Yazı 7 -->
+             <!-- Yazı 7 -->
             <div class="article-card">
                 <div class="article-image">
-                    <img src="https://namiksabirli-png.github.io/images/y_b_bakiler_kapak_resim.jpg" 
-                         alt="YAVUZ BÜLENT BAKİLER VEFAT ETTİ-TAZİYE-BİR HATIRA">
+                    <img src="https://namiksabirli-png.github.io/images/cocukluk.jpeg" 
+                         alt="YAŞAMI GÜZELLEŞTİREN HAZİNE: ÇOCUKLUK">
                 </div>
                 <div class="article-content">
-                    <h2 class="article-title">7. YAVUZ BÜLENT BAKİLER VEFAT ETTİ-TAZİYE-BİR HATIRA</h2>
-                    <p class="article-excerpt">Allah Rahmet Eylesin. Yüksek Lisans tezim için Arif Nihat Asya'nın eşine yazdığı mektupları bir araya getiren "Sevgi Mektupları" kitabını bulmam gerekiyordu. Kitap son baskısından sonra uzun süre basılmadığı için piyasada yoktu. Kitabı basan ve yayına hazırlayan da Üstat Yavuz Bülent Bakiler idi. 25.03.2009'da Üstat'a ulaşıp durumu ifade ettiğimde kendi elinde olduğunu bana verebileceğini söyledi ve İçerenköy'deki evine eşimle birlikte gittik.</p>
-                    <a href="https://namiksabirli-png.github.io/yavuzbulentbakilertaziye/index.html" class="read-more" target="_blank">Devamını Oku</a>
+                    <h2 class="article-title">7. YAŞAMI GÜZELLEŞTİREN HAZİNE: ÇOCUKLUK</h2>
+                    <p class="article-excerpt">Kalbin Varlığa Uyanışı: Yaşamın İlk Işığı: Çocukluk, bir başlangıçtır: Bir şeyin adını bile koymadığımız halde hissedebildiğimiz ilk ışık, ilk düş, ilk üzüntü, ilk sevinç... Henüz dili bilmiyorduk ama dil kelimelerle değil, hislerle kuruluyordu.</p>
+                    <a href="https://namiksabirli-png.github.io/cocukluk_yazisiyeni/cocukluk_iyilik" class="read-more" target="_blank">Devamını Oku</a>
                 </div>
             </div>
           
