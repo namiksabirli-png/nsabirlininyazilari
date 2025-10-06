@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namık Sabırlı Yazıları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+      
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+      
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 40px 0;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+      
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+      
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+      
+        .header-text {
+            flex: 1;
+        }
+      
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+      
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+      
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+      
+        .article-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+      
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+      
+        .article-image {
+            height: 200px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s;
+        }
+      
+        .article-card:hover .article-image img {
+            transform: scale(1.03);
+        }
+      
+        .article-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+      
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+      
+        .article-excerpt {
+            color: #555;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+      
+        .read-more {
+            display: inline-block;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            text-align: center;
+            transition: opacity 0.3s;
+        }
+      
+        .read-more:hover {
+            opacity: 0.9;
+        }
+      
+        .audio-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+      
+        .audio-icon {
+            font-size: 1rem;
+        }
+      
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+        }
+      
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+          
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+          
+            h1 {
+                font-size: 2rem;
+            }
+          
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+          
+            .article-image {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="https://namiksabirli-png.github.io/images/nmkprofilcapcut.jpeg" 
+                     alt="Namık Sabırlı" 
+                     class="profile-image">
+                <div class="header-text">
+                    <h1>NAMIK SABIRLI</h1>
+                    <p class="subtitle">DÜŞÜNCELER, DENEYİMLER VE ÖĞRENİLENLER ÜZERİNE YAZILAR</p>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <div class="container">
+        <div class="articles-grid">
+            <!-- Yazı 1 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/tutulmayagor.jpeg" 
+                         alt="“TUTULMAYAGÖR”: CAHİT SITKI TARANCI'NIN DİZESİNDE BİR KELİMENİN YAKICI GÜCÜ">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">1. "TUTULMAYAGÖR": CAHİT SITKI'NIN DİZESİNDE BİR KELİMENİN YAKICI GÜCÜ</h2>
+                    <div class="audio-indicator">
+                        <span class="audio-icon">🔊</span> Bu yazı, ses dosyası içerir
+                    </div>
+                    <p class="article-excerpt">"Bir kere sevdaya tutulmayagör / Ateşlere yandığının resmidir." Yüzeyde bakıldığında, bu dizeyi çevirmek zor değildir: "Sevdaya tutulduğun zaman, ateşlerde yanarsın."</p>
+                    <a href="https://namiksabirli-png.github.io/tutulmayagormuzik/" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+          
+             <!-- Yazı 2 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/y_b_bakiler_kapak_resim.jpg" 
+                         alt="YAVUZ BÜLENT BAKİLER VEFAT ETTİ-TAZİYE-BİR HATIRA">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">2. YAVUZ BÜLENT BAKİLER VEFAT ETTİ-TAZİYE-BİR HATIRA</h2>
+                    <div class="audio-indicator">
+                        <span class="audio-icon">🔊</span> Bu yazı, ses dosyası içerir
+                    </div>
+                    <p class="article-excerpt">Allah Rahmet Eylesin. Yüksek Lisans tezim için Arif Nihat Asya'nın eşine yazdığı mektupları bir araya getiren "Sevgi Mektupları" kitabını bulmam gerekiyordu. Kitap son baskısından sonra uzun süre basılmadığı için piyasada yoktu. Kitabı basan ve yayına hazırlayan da Üstat Yavuz Bülent Bakiler idi. 25.03.2009'da Üstat'a ulaşıp durumu ifade ettiğimde kendi elinde olduğunu bana verebileceğini söyledi ve İçerenköy'deki evine eşimle birlikte gittik.</p>
+                    <a href="https://namiksabirli-png.github.io/yavuzbulentbakilertaziye/index.html" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+            
+            
+            <!-- Yazı 3 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/dilimizin_ironik.jpeg" 
+                         alt="DİLİMİZİN İRONİK OYUNU: ABD'NİN BERBAT YÖNÜNE PERDE Mİ ÇEKİLİYOR?">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">3. "DİLİMİZİN İRONİK OYUNU: ABD'NİN BERBAT YÖNÜNE PERDE Mİ ÇEKİLİYOR?"</h2>
+                    <p class="article-excerpt">Türkçede dil kuralları dışında ortaya çıkan ve kullanımı devam eden ifadelere "galat-ı meşhur" denir. Buna bir örnek verelim: "Mefkûre" kelimesi, Türkçeye Arapça kökenliymiş gibi giren ama Arapçada bulunmayan bir türetimdir.</p>
+                    <a href="https://namiksabirli-png.github.io/namiksabirli.github.io/Interactive_Book_ABDnin_ismi" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+          
+            <!-- Yazı 4 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/eylemsizlik.jpeg" 
+                         alt="Eylemsizliğin Üç Yönü">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">4. "EYLEMSİZLİĞİN ÜÇ YÖNÜ"</h2>
+                    <p class="article-excerpt">"İnsan yaptığı değil, yapmadığı, yapamadığıyla insandır." — Cündioğlu / "Kötü bir resim asarım korkusuyla hiç resim asmadım. Kötü yaşarım korkusuyla hiç yaşamadım." — Tutunamayanlar, Oğuz Atay / "Kaçtığım bütün savaşların yaralarını taşıyorum." — Fernando Pessoa.</p>
+                    <a href="https://namiksabirli-png.github.io/yapamadiklarimiz/yapmamanin-uc-cehresison" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+          
+            <!-- Yazı 5 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/tarhana-susi.jpeg" 
+                         alt="TARHANA'DAN SUŞİ'YE: FORMUN İNCELİĞİ, HAYATIN AHLÂKI">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">5. TARHANA'DAN SUŞİ'YE: FORMUN İNCELİĞİ, HAYATIN AHLAKI</h2>
+                    <p class="article-excerpt">Geçtiğimiz zaman diliminde Dücane Cündioğlu bir videosunda, "tarhana/dürüm" gibi gündelik sembollerle "muhafazakâr aydın tipini" iğneleyen açıklamalarda bulundu.Zeki ve eğitimli ama düşüncesini hayatına (özellikle etik–estetik olgunluğa ve gündelik nezakete) dönüştürememiş kişi olarak vurguladı bu insanları.</p>
+                    <a href="https://namiksabirli-png.github.io/yazi-5-linki/" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+          
+            <!-- Yazı 6 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/yazarin_golgesi.jpeg" 
+                         alt="POSTMODERN BİR HİKAYE:Yazarın Gölgesinde Yaşamak">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">6. Postmodern Bir Hikaye: YAZARIN GÖLGESİNDE YAŞAMAK</h2>
+                    <p class="article-excerpt">… Kapı çaldı. Beklenmedik bir saatte, beklenmedik bir ses. Postacı elinde küçük bir paketle karşısında duruyordu. İçinden sararmış bir defter çıktı. Sadece ilk sayfasında kurşun kalemle yazılmış bir cümle vardı: "Bugün pencereden dışarı bakacaksın ve hayatının sana ait olmadığını fark edeceksin.</p>
+                    <a href="https://namiksabirli-png.github.io/yazi-6-linki/" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+          
+             <!-- Yazı 7 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/cocukluk.jpeg" 
+                         alt="YAŞAMI GÜZELLEŞTİREN HAZİNE: ÇOCUKLUK">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">7. YAŞAMI GÜZELLEŞTİREN HAZİNE: ÇOCUKLUK</h2>
+                    <p class="article-excerpt">Kalbin Varlığa Uyanışı: Yaşamın İlk Işığı: Çocukluk, bir başlangıçtır: Bir şeyin adını bile koymadığımız halde hissedebildiğimiz ilk ışık, ilk düş, ilk üzüntü, ilk sevinç... Henüz dili bilmiyorduk ama dil kelimelerle değil, hislerle kuruluyordu.</p>
+                    <a href="https://namiksabirli-png.github.io/cocukluk_yazisiyeni/cocukluk_iyilik" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+          
+            <!-- Yazı 8 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/yazi-8-resim.jpeg" 
+                         alt="Yazı 8 Başlığı">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">Yazı-8: Başlık Buraya</h2>
+                    <p class="article-excerpt">Yazı özeti buraya gelecek. Kısa ve ilgi çekici bir açıklama.</p>
+                    <a href="https://namiksabirli-png.github.io/yazi-8-linki/" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+          
+            <!-- Yazı 9 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/yazi-9-resim.jpeg" 
+                         alt="Yazı 9 Başlığı">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">Yazı-9: Başlık Buraya</h2>
+                    <p class="article-excerpt">Yazı özeti buraya gelecek. Kısa ve ilgi çekici bir açıklama.</p>
+                    <a href="https://namiksabirli-png.github.io/yazi-9-linki/" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+          
+            <!-- Yazı 10 -->
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="https://namiksabirli-png.github.io/images/yazi-10-resim.jpeg" 
+                         alt="Yazı 10 Başlığı">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">Yazı-10: Başlık Buraya</h2>
+                    <p class="article-excerpt">Yazı özeti buraya gelecek. Kısa ve ilgi çekici bir açıklama.</p>
+                    <a href="https://namiksabirli-png.github.io/yazi-10-linki/" class="read-more" target="_blank">Devamını Oku</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <footer>
+        <div class="container">
+            <p>© 2023 Namık Sabırlı Yazıları. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
